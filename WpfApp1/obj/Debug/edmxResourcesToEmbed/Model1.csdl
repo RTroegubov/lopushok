@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="inetprovider_kpModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="StatusTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="StatusType" Relationship="Self.FK_Admin_StatusType" FromRole="Admin" ToRole="StatusType" />
+  </EntityType>
+  <EntityType Name="CallCenter">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Workersid" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="CountCall" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="StatusType" Relationship="Self.FK_CallCenter_StatusType" FromRole="CallCenter" ToRole="StatusType" />
+    <NavigationProperty Name="Workers" Relationship="Self.FK_CallCenter_Workers" FromRole="CallCenter" ToRole="Workers" />
+    <NavigationProperty Name="Rate" Relationship="Self.FK_Rate_CallCenter" FromRole="CallCenter" ToRole="Rate" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDay" Type="DateTime" Precision="0" />
+    <Property Name="Phone" Type="Double" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Balance" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Order_Client" FromRole="Client" ToRole="Order" />
+    <Property Name="Photo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Naryad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Adress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NaryadService">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceID" Type="Int32" Nullable="false" />
+    <Property Name="NaryadID" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Service" Relationship="Self.FK_NaryadService_Naryad" FromRole="NaryadService" ToRole="Service" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TimeStart" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TimeEnd" Type="DateTime" Precision="0" />
+    <Property Name="ClientId" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Order_Client" FromRole="Order" ToRole="Client" />
+    <NavigationProperty Name="OrderService" Relationship="Self.FK_OrderService_Order" FromRole="Order" ToRole="OrderService" />
+  </EntityType>
+  <EntityType Name="OrderService">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Serviceid" Type="Int32" Nullable="false" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="DateBegin" Type="DateTime" Precision="0" />
+    <Property Name="Active" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_OrderService_Order" FromRole="OrderService" ToRole="Order" />
+    <NavigationProperty Name="Service" Relationship="Self.FK_OrderService_Service" FromRole="OrderService" ToRole="Service" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Phone" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Passport" Type="Int32" Nullable="false" />
+    <Property Name="INN" Type="Int32" />
+    <Property Name="StatusTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="StatusType" Relationship="Self.FK_Person_StatusType" FromRole="Person" ToRole="StatusType" />
+    <NavigationProperty Name="PersonPayment" Relationship="Self.FK_PersonPayment_Person" FromRole="Person" ToRole="PersonPayment" />
+    <NavigationProperty Name="Workers" Relationship="Self.FK_Workers_Person" FromRole="Person" ToRole="Workers" />
+  </EntityType>
+  <EntityType Name="PersonPayment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="RateId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_PersonPayment_Person" FromRole="PersonPayment" ToRole="Person" />
+    <NavigationProperty Name="Rate" Relationship="Self.FK_PersonPayment_Rate" FromRole="PersonPayment" ToRole="Rate" />
+    <NavigationProperty Name="SysPaym" Relationship="Self.FK_SysPaym_PersonPayment" FromRole="PersonPayment" ToRole="SysPaym" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="StorageId" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductType" Relationship="Self.FK_Product_ProductType" FromRole="Product" ToRole="ProductType" />
+    <NavigationProperty Name="Storage" Relationship="Self.FK_Product_Storage" FromRole="Product" ToRole="Storage" />
+    <NavigationProperty Name="ProviderOrderProduct" Relationship="Self.FK_ProviderOrderProduct_Product" FromRole="Product" ToRole="ProviderOrderProduct" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_ProductType" FromRole="ProductType" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Provider">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Adress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Logo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProviderOrder" Relationship="Self.FK_ProviderOrder_Provider" FromRole="Provider" ToRole="ProviderOrder" />
+  </EntityType>
+  <EntityType Name="ProviderOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProviderId" Type="Int32" Nullable="false" />
+    <Property Name="Num" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Provider" Relationship="Self.FK_ProviderOrder_Provider" FromRole="ProviderOrder" ToRole="Provider" />
+    <NavigationProperty Name="ProviderOrderProduct" Relationship="Self.FK_ProviderOrderProduct_ProviderOrder" FromRole="ProviderOrder" ToRole="ProviderOrderProduct" />
+  </EntityType>
+  <EntityType Name="ProviderOrderProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="ProviderOrderId" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_ProviderOrderProduct_Product" FromRole="ProviderOrderProduct" ToRole="Product" />
+    <NavigationProperty Name="ProviderOrder" Relationship="Self.FK_ProviderOrderProduct_ProviderOrder" FromRole="ProviderOrderProduct" ToRole="ProviderOrder" />
+  </EntityType>
+  <EntityType Name="Rate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Score" Type="String" MaxLength="18" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CallCenterId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CallCenter" Relationship="Self.FK_Rate_CallCenter" FromRole="Rate" ToRole="CallCenter" />
+    <NavigationProperty Name="PersonPayment" Relationship="Self.FK_PersonPayment_Rate" FromRole="Rate" ToRole="PersonPayment" />
+  </EntityType>
+  <EntityType Name="RegistrService">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceDiscountID" Type="Int32" Nullable="false" />
+    <Property Name="PersonID" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TimeStart" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TimeEnd" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="ServiceDiscount" Relationship="Self.FK_RegistrService_ServiceDiscount" FromRole="RegistrService" ToRole="ServiceDiscount" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Logo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NaryadService" Relationship="Self.FK_NaryadService_Naryad" FromRole="Service" ToRole="NaryadService" />
+    <NavigationProperty Name="OrderService" Relationship="Self.FK_OrderService_Service" FromRole="Service" ToRole="OrderService" />
+    <NavigationProperty Name="ServiceDiscount" Relationship="Self.FK_ServiceDiscount_Service" FromRole="Service" ToRole="ServiceDiscount" />
+  </EntityType>
+  <EntityType Name="ServiceDiscount">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <Property Name="Discount" Type="Double" Nullable="false" />
+    <NavigationProperty Name="RegistrService" Relationship="Self.FK_RegistrService_ServiceDiscount" FromRole="ServiceDiscount" ToRole="RegistrService" />
+    <NavigationProperty Name="Service" Relationship="Self.FK_ServiceDiscount_Service" FromRole="ServiceDiscount" ToRole="Service" />
+  </EntityType>
+  <EntityType Name="StatusType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Admin" Relationship="Self.FK_Admin_StatusType" FromRole="StatusType" ToRole="Admin" />
+    <NavigationProperty Name="CallCenter" Relationship="Self.FK_CallCenter_StatusType" FromRole="StatusType" ToRole="CallCenter" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_Person_StatusType" FromRole="StatusType" ToRole="Person" />
+  </EntityType>
+  <EntityType Name="Storage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_Storage" FromRole="Storage" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="SysPaym">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="PersonPaymentId" Type="Int32" Nullable="false" />
+    <Property Name="encouaragment" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Punishment" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="PersonPayment" Relationship="Self.FK_SysPaym_PersonPayment" FromRole="SysPaym" ToRole="PersonPayment" />
+  </EntityType>
+  <EntityType Name="Workers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CallCenter" Relationship="Self.FK_CallCenter_Workers" FromRole="Workers" ToRole="CallCenter" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_Workers_Person" FromRole="Workers" ToRole="Person" />
+  </EntityType>
+  <Association Name="FK_Admin_StatusType">
+    <End Role="StatusType" Type="Self.StatusType" Multiplicity="1" />
+    <End Role="Admin" Type="Self.Admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Admin">
+        <PropertyRef Name="StatusTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CallCenter_StatusType">
+    <End Role="StatusType" Type="Self.StatusType" Multiplicity="1" />
+    <End Role="CallCenter" Type="Self.CallCenter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CallCenter">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CallCenter_Workers">
+    <End Role="Workers" Type="Self.Workers" Multiplicity="1" />
+    <End Role="CallCenter" Type="Self.CallCenter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Workers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CallCenter">
+        <PropertyRef Name="Workersid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rate_CallCenter">
+    <End Role="CallCenter" Type="Self.CallCenter" Multiplicity="1" />
+    <End Role="Rate" Type="Self.Rate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CallCenter">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Rate">
+        <PropertyRef Name="CallCenterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Client">
+    <End Type="Self.Client" Multiplicity="1" Role="Client" />
+    <End Type="Self.Order" Multiplicity="*" Role="Order" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NaryadService_Naryad">
+    <End Role="Service" Type="Self.Service" Multiplicity="1" />
+    <End Role="NaryadService" Type="Self.NaryadService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Service">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NaryadService">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderService_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="OrderService" Type="Self.OrderService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderService">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderService_Service">
+    <End Role="Service" Type="Self.Service" Multiplicity="1" />
+    <End Role="OrderService" Type="Self.OrderService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Service">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderService">
+        <PropertyRef Name="Serviceid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Person_StatusType">
+    <End Role="StatusType" Type="Self.StatusType" Multiplicity="1" />
+    <End Role="Person" Type="Self.Person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Person">
+        <PropertyRef Name="StatusTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonPayment_Person">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="PersonPayment" Type="Self.PersonPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonPayment">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Workers_Person">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Workers" Type="Self.Workers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Workers">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonPayment_Rate">
+    <End Role="Rate" Type="Self.Rate" Multiplicity="1" />
+    <End Role="PersonPayment" Type="Self.PersonPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonPayment">
+        <PropertyRef Name="RateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SysPaym_PersonPayment">
+    <End Role="PersonPayment" Type="Self.PersonPayment" Multiplicity="1" />
+    <End Role="SysPaym" Type="Self.SysPaym" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonPayment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SysPaym">
+        <PropertyRef Name="PersonPaymentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductType">
+    <End Role="ProductType" Type="Self.ProductType" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Storage">
+    <End Role="Storage" Type="Self.Storage" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Storage">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="StorageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProviderOrderProduct_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProviderOrderProduct" Type="Self.ProviderOrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProviderOrderProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProviderOrder_Provider">
+    <End Role="Provider" Type="Self.Provider" Multiplicity="1" />
+    <End Role="ProviderOrder" Type="Self.ProviderOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provider">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProviderOrder">
+        <PropertyRef Name="ProviderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProviderOrderProduct_ProviderOrder">
+    <End Role="ProviderOrder" Type="Self.ProviderOrder" Multiplicity="1" />
+    <End Role="ProviderOrderProduct" Type="Self.ProviderOrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProviderOrder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProviderOrderProduct">
+        <PropertyRef Name="ProviderOrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RegistrService_ServiceDiscount">
+    <End Role="ServiceDiscount" Type="Self.ServiceDiscount" Multiplicity="1" />
+    <End Role="RegistrService" Type="Self.RegistrService" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceDiscount">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RegistrService">
+        <PropertyRef Name="ServiceDiscountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServiceDiscount_Service">
+    <End Role="Service" Type="Self.Service" Multiplicity="1" />
+    <End Role="ServiceDiscount" Type="Self.ServiceDiscount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Service">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ServiceDiscount">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="inetprovider_kpEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin" EntityType="Self.Admin" />
+    <EntitySet Name="CallCenter" EntityType="Self.CallCenter" />
+    <EntitySet Name="Client" EntityType="Self.Client" />
+    <EntitySet Name="Naryad" EntityType="Self.Naryad" />
+    <EntitySet Name="NaryadService" EntityType="Self.NaryadService" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="OrderService" EntityType="Self.OrderService" />
+    <EntitySet Name="Person" EntityType="Self.Person" />
+    <EntitySet Name="PersonPayment" EntityType="Self.PersonPayment" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" />
+    <EntitySet Name="Provider" EntityType="Self.Provider" />
+    <EntitySet Name="ProviderOrder" EntityType="Self.ProviderOrder" />
+    <EntitySet Name="ProviderOrderProduct" EntityType="Self.ProviderOrderProduct" />
+    <EntitySet Name="Rate" EntityType="Self.Rate" />
+    <EntitySet Name="RegistrService" EntityType="Self.RegistrService" />
+    <EntitySet Name="Service" EntityType="Self.Service" />
+    <EntitySet Name="ServiceDiscount" EntityType="Self.ServiceDiscount" />
+    <EntitySet Name="StatusType" EntityType="Self.StatusType" />
+    <EntitySet Name="Storage" EntityType="Self.Storage" />
+    <EntitySet Name="SysPaym" EntityType="Self.SysPaym" />
+    <EntitySet Name="Workers" EntityType="Self.Workers" />
+    <AssociationSet Name="FK_Admin_StatusType" Association="Self.FK_Admin_StatusType">
+      <End Role="StatusType" EntitySet="StatusType" />
+      <End Role="Admin" EntitySet="Admin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CallCenter_StatusType" Association="Self.FK_CallCenter_StatusType">
+      <End Role="StatusType" EntitySet="StatusType" />
+      <End Role="CallCenter" EntitySet="CallCenter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CallCenter_Workers" Association="Self.FK_CallCenter_Workers">
+      <End Role="Workers" EntitySet="Workers" />
+      <End Role="CallCenter" EntitySet="CallCenter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rate_CallCenter" Association="Self.FK_Rate_CallCenter">
+      <End Role="CallCenter" EntitySet="CallCenter" />
+      <End Role="Rate" EntitySet="Rate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Client" Association="Self.FK_Order_Client">
+      <End EntitySet="Client" Role="Client" />
+      <End EntitySet="Order" Role="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NaryadService_Naryad" Association="Self.FK_NaryadService_Naryad">
+      <End Role="Service" EntitySet="Service" />
+      <End Role="NaryadService" EntitySet="NaryadService" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderService_Order" Association="Self.FK_OrderService_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderService" EntitySet="OrderService" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderService_Service" Association="Self.FK_OrderService_Service">
+      <End Role="Service" EntitySet="Service" />
+      <End Role="OrderService" EntitySet="OrderService" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Person_StatusType" Association="Self.FK_Person_StatusType">
+      <End Role="StatusType" EntitySet="StatusType" />
+      <End Role="Person" EntitySet="Person" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonPayment_Person" Association="Self.FK_PersonPayment_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="PersonPayment" EntitySet="PersonPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Workers_Person" Association="Self.FK_Workers_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Workers" EntitySet="Workers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonPayment_Rate" Association="Self.FK_PersonPayment_Rate">
+      <End Role="Rate" EntitySet="Rate" />
+      <End Role="PersonPayment" EntitySet="PersonPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SysPaym_PersonPayment" Association="Self.FK_SysPaym_PersonPayment">
+      <End Role="PersonPayment" EntitySet="PersonPayment" />
+      <End Role="SysPaym" EntitySet="SysPaym" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductType" Association="Self.FK_Product_ProductType">
+      <End Role="ProductType" EntitySet="ProductType" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Storage" Association="Self.FK_Product_Storage">
+      <End Role="Storage" EntitySet="Storage" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProviderOrderProduct_Product" Association="Self.FK_ProviderOrderProduct_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProviderOrderProduct" EntitySet="ProviderOrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProviderOrder_Provider" Association="Self.FK_ProviderOrder_Provider">
+      <End Role="Provider" EntitySet="Provider" />
+      <End Role="ProviderOrder" EntitySet="ProviderOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProviderOrderProduct_ProviderOrder" Association="Self.FK_ProviderOrderProduct_ProviderOrder">
+      <End Role="ProviderOrder" EntitySet="ProviderOrder" />
+      <End Role="ProviderOrderProduct" EntitySet="ProviderOrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RegistrService_ServiceDiscount" Association="Self.FK_RegistrService_ServiceDiscount">
+      <End Role="ServiceDiscount" EntitySet="ServiceDiscount" />
+      <End Role="RegistrService" EntitySet="RegistrService" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServiceDiscount_Service" Association="Self.FK_ServiceDiscount_Service">
+      <End Role="Service" EntitySet="Service" />
+      <End Role="ServiceDiscount" EntitySet="ServiceDiscount" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

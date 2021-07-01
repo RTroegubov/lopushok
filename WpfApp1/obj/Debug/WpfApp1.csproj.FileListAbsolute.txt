@@ -1,0 +1,190 @@
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\App.g.cs
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\EntityFramework.dll
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\EntityFramework.xml
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\windows\ShowUser.g.cs
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\windows\ShowUser.baml
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\windows\OpenService.g.cs
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\windows\OpenService.baml
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\windows\ServiceWindow.g.cs
+C:\Users\User\T1mba\Desktop\курсач пейн\Mihkurs\WpfApp1\obj\Debug\windows\ServiceWindow.baml
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\windows\OpenService.g.cs
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\windows\ServiceWindow.g.cs
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\windows\ShowUser.g.cs
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\windows\OpenService.baml
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\windows\ServiceWindow.baml
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\windows\ShowUser.baml
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\User\Desktop\Kurs_job-master\Mihkurs\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\windows\OpenService.g.cs
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\windows\ShowUser.g.cs
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\App.g.cs
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\windows\OpenService.baml
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\windows\ShowUser.baml
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\User\Desktop\Kurs_job-master\troegubov\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\windows\OpenService.g.cs
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\windows\ShowUser.g.cs
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\App.g.cs
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\windows\OpenService.baml
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\windows\ShowUser.baml
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\User\Desktop\kursovoy-master\troegubov\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.dll
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.xml
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\OpenService.g.cs
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\ShowUser.g.cs
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\OpenService.baml
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\ShowUser.baml
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\UserWindows.g.cs
+C:\Users\Макс\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\UserWindows.baml
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\EntityFramework.dll
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\EntityFramework.xml
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Game\kursaak\kursaak-master\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\windows\OpenService.g.cs
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\windows\ShowUser.g.cs
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\windows\UserWindows.g.cs
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\App.g.cs
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\MainWindow.baml
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\windows\OpenService.baml
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\windows\ShowUser.baml
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\windows\UserWindows.baml
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Game\kursaak\kursaak-master\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\kursaak-master\WpfApp1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\OpenService.g.cs
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\ShowUser.g.cs
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\UserWindows.g.cs
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\App.g.cs
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1_Content.g.cs
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\OpenService.baml
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\ShowUser.baml
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\windows\UserWindows.baml
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\User\Desktop\kursaak-master\WpfApp1\obj\Debug\WpfApp1.pdb

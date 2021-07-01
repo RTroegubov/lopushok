@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ae0e5fa13a474a91911c633820399a0a" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="inetprovider_kpModel.Admin" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.CallCenter" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Client" Width="1.5" PointX="12.375" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Naryad" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.NaryadService" Width="1.5" PointX="8" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Order" Width="1.5" PointX="8.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.OrderService" Width="1.5" PointX="11" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Person" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.PersonPayment" Width="1.5" PointX="12" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Product" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.ProductType" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Provider" Width="1.5" PointX="5.75" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.ProviderOrder" Width="1.5" PointX="8" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.ProviderOrderProduct" Width="1.5" PointX="10.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Rate" Width="1.5" PointX="9.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.RegistrService" Width="1.5" PointX="10.25" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Service" Width="1.5" PointX="5.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.ServiceDiscount" Width="1.5" PointX="8" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.StatusType" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Storage" Width="1.5" PointX="5.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.SysPaym" Width="1.5" PointX="14.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="inetprovider_kpModel.Workers" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_Admin_StatusType" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_CallCenter_StatusType" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_CallCenter_Workers" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_Rate_CallCenter" ManuallyRouted="false" />
+        <AssociationConnector ManuallyRouted="false" Association="inetprovider_kpModel.FK_Order_Client" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_NaryadService_Naryad" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_OrderService_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_OrderService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_Person_StatusType" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_PersonPayment_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_Workers_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_PersonPayment_Rate" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_SysPaym_PersonPayment" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_Product_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_ProviderOrderProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_ProviderOrder_Provider" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_ProviderOrderProduct_ProviderOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_RegistrService_ServiceDiscount" ManuallyRouted="false" />
+        <AssociationConnector Association="inetprovider_kpModel.FK_ServiceDiscount_Service" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
